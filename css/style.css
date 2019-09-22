@@ -1,0 +1,115 @@
+﻿/* homework 3 */
+/* shannon kenny */
+
+
+/* format text font */
+h1 {
+    font-size: 2em;
+    line-height: 1.5;
+    color: #c12258;
+}
+
+/* format non-header text and cell borders */
+td {
+    color: black;
+    font-size: 18px;
+    padding: 15px; 
+    text-align: center;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+}
+
+/* FIXME */
+.rowhead:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.rowhead {
+    color: black;
+    font-size: 18px;
+    padding-top: 15px;
+    border-bottom: 2px solid black;
+}
+tr:last-of-type td{
+    border-bottom: none;
+}
+tbody tr:last-of-type th {
+    border-radius: 0px 0px 0px 10px;
+}
+tr:last-of-type td:last-of-type {
+    border-radius: 0px 0px 10px 0px;
+}
+
+
+/* format links */
+a {
+    font-size: 18px;
+    color: #c12258;
+    text-decoration: underline;
+}
+
+/* give focused elems a border */
+:focus {
+    border: 1px solid red;
+}
+
+/* set the background image, fallback of grey */
+body {
+    background: url("../images/pidgeon-background.jpg") #dddddd;
+    padding: 20px;
+}
+
+/* give table a border with rounded edges */
+table {
+    border: 2px solid black;
+    border-radius: 10px;
+    border-collapse: separate;
+    -moz-border-radius: 10px;
+}
+.colhead {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background: #7e0830;
+    border-bottom: 2px solid black;
+}
+.colhead:first-child {
+    border-radius: 8px 0px 0px 0px;
+}
+.colhead:last-child {
+    border-radius: 0px 8px 0px 0px;
+}
+
+
+p {
+    padding: 10px;
+}
+
+/* format the footer */
+footer {
+    margin-top: 25px;
+    background: black;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/* even numbered table rows are grey, odd are transparent */
+tr:nth-child(2n) {
+    background: #ddd;
+}
+tr:nth-child(2n+1) {
+    opacity: 0%;
+}
+
+tr:hover {
+    background: #fab9cf;
+}
